@@ -360,6 +360,7 @@ a {
     padding-top: 60px;
   }
 /* REGISTER */
+
 .register-page{
     min-height: 100vh;
 }
@@ -442,8 +443,12 @@ label{
     display: none;
 }
 /* Confirmation view */
+
 .confirmation-container{
-    margin-top: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
 }
 .confirmation-title{
     color: white;
@@ -459,6 +464,9 @@ label{
 .register-image {
     width: 80%;
     max-width: 1200px;
+}
+.confirmation-header{
+    margin: 2rem 0;
 }
 
 /* Mediaqueries */
@@ -549,8 +557,10 @@ label{
     .nosotros-section{
         row-gap: 6rem;
     }
+
+
     /* Registro */
-    .register-body-container {
+    .register-confirmation-container, .register-body-container {
         display: flex;
     }
     .register-image-container{
@@ -558,4 +568,8 @@ label{
        justify-content: center;
         align-items: center;
     }
+    .confirmation-header{
+        margin-top: 20vh;
+    }
+
 }

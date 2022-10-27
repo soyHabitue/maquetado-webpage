@@ -17,11 +17,4 @@ function stickNav() {
   }
 }
 
-// MOVE ACTIVE LINK TO FRONT
-// Get active class
-var active = document.getElementsByClassName("active");
-
-// Scroll navbar
-//active.scrollTo(10, 0);
-
 /* FINAL STICKY NAVBAR QUE OFRECEMOS */

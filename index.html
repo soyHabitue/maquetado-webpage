@@ -16,9 +16,77 @@
 <body>
     <div class="container-fluid _body-container">
         <div class="header-container">
-            <nav class="navbar-container _section">
-                <img src="assets/logo-habitue-blanco.svg" alt="" class="logo-habitue">
-            </nav>
+            <div class="nav-container-outer">
+                <nav class="navbar-container _section desktop-nav">
+                    <a href="index.html" class="nav-logo-container">
+                        <img src="assets/logo-habitue-blanco.svg" alt="Habitué" class="logo-habitue" width="200">
+                    </a>
+                    <div class="nav-items-container">
+                        <div class="nav-items-left nav-items">
+                            <a href="pages/funcionalidades.html" class="nav-link-container">
+                                <div class="_nav-link">¿Que ofrecemos?</div>
+                            </a>
+                            <a href="pages/nosotros.html" class="nav-link-container">
+                                <div class="_nav-link">Nosotros</div>
+                            </a>
+                        </div>
+                        <div class="nav-items-right nav-items">
+                            <a href="marketplace" class="nav-link-container">
+                                <div class="_nav-link">Pedir comida</div>
+                            </a>
+                            <a href="ingreso-dashboard" class="nav-link-container">
+                                <div class="_nav-link">Ingresar</div>
+                            </a>
+                            <a href="pages/register-step-1.html" class="nav-button-container">
+                                <div class="nav-button">¡Quiero registrarme!</div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="navbar-container _section mobile-nav">
+                    <div class="open-nav-button" id="open-nav" onclick="openNav()">
+                        <div class="icon-wrapper">
+                            <img src="assets/burger-menu-button.svg" alt="">
+                        </div>
+                        <span>Menu</span>
+                    </div>
+                    <a href="index.html" class="nav-logo-container">
+                        <img src="assets/logo-habitue-blanco.svg" alt="Habitué" class="logo-habitue" width="125">
+                    </a>
+                </nav>
+                <div class="mobile-menu-container hide" id="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <a href="index.html" class="nav-logo-container">
+                            <img src="assets/logo-habitue-violeta.svg" alt="Habitué" class="logo-habitue" width="125">
+                        </a>
+                        <div class="close-button-container" id="close-button" onclick="closeNav()">
+                            <img src="assets/close-button-icon.svg" alt="Cerrar">
+                        </div>
+                    </div>
+                    <div class="mobile-menu-body">
+                        <div class="nav-items-top menu-items">
+                            <a href="pages/funcionalidades.html" class="menu-link-container">
+                                <div class="menu-link">¿Que ofrecemos?</div>
+                            </a>
+                            <a href="pages/nosotros.html" class="menu-link-container">
+                                <div class="menu-link">Nosotros</div>
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="nav-items-bottom menu-items">
+                            <a href="marketplace" class="menu-link-container">
+                                <div class="menu-link">Pedir comida</div>
+                            </a>
+                            <a href="ingreso-dashboard" class="menu-link-container">
+                                <div class="menu-link">Ingresar</div>
+                            </a>
+                            <a href="pages/register-step-1.html" class="nav-button-container">
+                                <div class="nav-button">¡Quiero registrarme!</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="call-to-action-container _section row">
                 <div class="call-to-action col-12 col-md-6">
                     <h1 class="header-title">Digitaliza tu negocio con tu propia tienda online</h1>
@@ -164,7 +232,7 @@
                 </div>
             </div>
         </div>
-        <div class="crecemos-container _section section-padding">
+        <div class="crecemos-container _section section-padding" id="500">
             <h6 class="section-name">Seguimos creciendo</h6>
             <div class="section-content crecemos-section">
                 <img src="assets/logo-500-habitue.webp" alt="" class="logo-accelerator" width="130">
@@ -172,12 +240,63 @@
                 <p class="accelerator-description col-12 col-md-6">¿Qué es 500? 500 es el fondo de Venture Capital (Inversión en etapa temprana) más activo del mundo, enfocados en empresas tecnológicas de rápido crecimiento.</p>
             </div>
         </div>
-        <div class="footer-container ">
+        <div class="footer-container _section section-padding">
+            <div class="footer-container-inner">
+                <div class="links-container">
+                    <div class="footer-links-collection">
+                        <h5 class="footer-collection-title">Sobre Habitué</h5>
+                        <ul class="footer-links-list">
+                            <li class="footer-link-item"><a href="./pages/funcionalidades.html">Funcionalidades</a></li>
+                            <li class="footer-link-item"><a href="#sales-channel">Canales de venta</a></li>
+                            <li class="footer-link-item"><a href="./pages/nosotros.html">Nosotros</a></li>
+                            <li class="footer-link-item"><a href="#500">500 Latam</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-collection">
+                        <h5 class="footer-collection-title">Atención</h5>
+                        <ul class="footer-links-list">
+                            <li class="footer-link-item"><a href="linktree">Soporte</a></li>
+                            <!-- Evaluar cambiar blog por tutoriales hasta que este activo el blog -->
+                            <li class="footer-link-item"><a href="tutoriales">Tutoriales</a></li>
+                            <li class="footer-link-item"><a href="faqs">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
 
+                </div>
+                <div class="social-container ">
+                    <div class="footer-logo-container">
+                        <img src="./assets/logo-habitue-blanco.svg" alt="Habitué" class="footer-logo-image">
+                    </div>
+                    <ul class="social-logos-container">
+                        <li class="social-logo-outer">
+                            <a href="instagram">
+                                <img src="./assets/instagram-icon.svg" alt="" class="social-logo">
+                            </a>
+                        </li>
+                        <li class="social-logo-outer">
+                            <a href="facebook">
+                                <img src="./assets/facebook-icon.svg" alt="" class="social-logo">
+                            </a>
+                        </li>
+                        <li class="social-logo-outer">
+                            <a href="linkedin">
+                                <img src="./assets/linkedin-icon.svg" alt="" class="social-logo">
+                            </a>
+                        </li>
+                        <li class="social-logo-outer">
+                            <a href="youtube">
+                                <img src="./assets/youtube-icon.svg" alt="" class="social-logo">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 
+<script src="js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </html>

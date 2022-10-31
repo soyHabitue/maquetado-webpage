@@ -1,3 +1,15 @@
+//Open menu button
+var mobileMenu = document.getElementById("mobile-menu");
+
+function openNav() {
+  mobileMenu.classList.replace("hide", "show");
+}
+function closeNav() {
+    mobileMenu.classList.replace("show", "hide");
+}
+
+
+
 /* INICIO STICKY NAVBAR QUE OFRECEMOS */
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {stickNav()};

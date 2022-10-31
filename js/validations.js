@@ -30,7 +30,7 @@ function phonePlace() {
             phone.placeholder="11 5959 5959"
             break;
         case "uy":
-            phone.placeholder="5959 5959"
+            phone.placeholder="59 595 959"
             break;
         case "py":
             phone.placeholder="5959 5959595"

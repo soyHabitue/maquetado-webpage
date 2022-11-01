@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soy Habitué</title>
-    <link rel="stylesheet" href="css/master.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon-habitue.svg">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
     <div class="container-fluid _body-container">
@@ -34,7 +36,7 @@
                             <a href="marketplace" class="nav-link-container">
                                 <div class="_nav-link">Pedir comida</div>
                             </a>
-                            <a href="ingreso-dashboard" class="nav-link-container">
+                            <a href="https://panel.habitueonline.com/login" class="nav-link-container">
                                 <div class="_nav-link">Ingresar</div>
                             </a>
                             <a href="pages/register-step-1.html" class="nav-button-container">
@@ -77,7 +79,7 @@
                             <a href="marketplace" class="menu-link-container">
                                 <div class="menu-link">Pedir comida</div>
                             </a>
-                            <a href="ingreso-dashboard" class="menu-link-container">
+                            <a href="https://panel.habitueonline.com/login" class="menu-link-container">
                                 <div class="menu-link">Ingresar</div>
                             </a>
                             <a href="pages/register-step-1.html" class="nav-button-container">
@@ -208,14 +210,40 @@
             </div>
         </div>
         <div class="stories-carousel-container _section">
-            <div class="stories-carousel-inner">
-                <div class="customer-story-container">
-                    <div class="customer-story col-12 col-sm-8 col-md-6">
+            <div class="stories-carousel-inner slides">
+                <div class="customer-story-container slide col-12">
+                    <div class="customer-story col-12">
                         <h5 class="story">“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus”</h5>
                         <div class="customer-information-container">
                             <img src="assets/logo-rigor-blanco.jpg" alt="" class="business-logo" width="64" height="64">
                             <div class="customer-information">
-                                <h6 class="customer-name">Nombre Apellido</h6>
+                                <h6 class="customer-name">Diego Maradona</h6>
+                                <h6 class="business-name">Rigor Pizza</h6>
+                            </div>
+                        </div> 
+                    </div>
+                    <img src="assets/customer-image-test.png" alt="" class="customer-image">
+                </div>
+                <div class="customer-story-container slide col-12">
+                    <div class="customer-story col-12">
+                        <h5 class="story">“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus”</h5>
+                        <div class="customer-information-container">
+                            <img src="assets/logo-rigor-blanco.jpg" alt="" class="business-logo" width="64" height="64">
+                            <div class="customer-information">
+                                <h6 class="customer-name">Carlos Tevez</h6>
+                                <h6 class="business-name">Rigor Pizza</h6>
+                            </div>
+                        </div> 
+                    </div>
+                    <img src="assets/customer-image-test.png" alt="" class="customer-image">
+                </div>
+                <div class="customer-story-container slide col-12">
+                    <div class="customer-story col-12">
+                        <h5 class="story">“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus”</h5>
+                        <div class="customer-information-container">
+                            <img src="assets/logo-rigor-blanco.jpg" alt="" class="business-logo" width="64" height="64">
+                            <div class="customer-information">
+                                <h6 class="customer-name">JRR10</h6>
                                 <h6 class="business-name">Rigor Pizza</h6>
                             </div>
                         </div> 
@@ -224,18 +252,20 @@
                 </div>
             </div>
             <div class="carousel-buttons-container">
-                <div class="carousel-button last">
-                    <span></span>
-                </div>
-                <div class="carousel-button next">
-                    <span></span>
-                </div>
+                <button class="carousel-button last" id="prev-btn">
+                    <img src="assets/prev-arrow-icon.svg" alt="">
+                </button>
+                <button class="carousel-button last" id="next-btn">
+                    <img src="assets/next-arrow-icon.svg" alt="">
+                </button>
             </div>
         </div>
         <div class="crecemos-container _section section-padding" id="500">
             <h6 class="section-name">Seguimos creciendo</h6>
             <div class="section-content crecemos-section">
-                <img src="assets/logo-500-habitue.webp" alt="" class="logo-accelerator" width="130">
+                <a href="https://500latam.medium.com/batch16-843e8589dac7">
+                    <img src="assets/logo-500-habitue.webp" alt="" class="logo-accelerator" width="130">
+                </a>
                 <h4 class="accelerator-subtitule col-12 col-md-6">Somos parte del portafolio de 500 Latam</h4>
                 <p class="accelerator-description col-12 col-md-6">¿Qué es 500? 500 es el fondo de Venture Capital (Inversión en etapa temprana) más activo del mundo, enfocados en empresas tecnológicas de rápido crecimiento.</p>
             </div>
@@ -255,10 +285,10 @@
                     <div class="footer-links-collection">
                         <h5 class="footer-collection-title">Atención</h5>
                         <ul class="footer-links-list">
-                            <li class="footer-link-item"><a href="linktree">Soporte</a></li>
+                            <li class="footer-link-item"><a href="https://linktr.ee/soyhabitue">Soporte</a></li>
                             <!-- Evaluar cambiar blog por tutoriales hasta que este activo el blog -->
-                            <li class="footer-link-item"><a href="tutoriales">Tutoriales</a></li>
-                            <li class="footer-link-item"><a href="faqs">Preguntas frecuentes</a></li>
+                            <li class="footer-link-item"><a href="https://www.youtube.com/channel/UCzn97XSUp_I5j5KhW_7Bokw">Tutoriales</a></li>
+                            <li class="footer-link-item"><a href="pages/faqs.html">Preguntas frecuentes</a></li>
                         </ul>
                     </div>
 
@@ -269,22 +299,22 @@
                     </div>
                     <ul class="social-logos-container">
                         <li class="social-logo-outer">
-                            <a href="instagram">
+                            <a href="https://www.instagram.com/soyhabitue/">
                                 <img src="./assets/instagram-icon.svg" alt="" class="social-logo">
                             </a>
                         </li>
                         <li class="social-logo-outer">
-                            <a href="facebook">
+                            <a href="https://www.facebook.com/SoyHabitue/">
                                 <img src="./assets/facebook-icon.svg" alt="" class="social-logo">
                             </a>
                         </li>
                         <li class="social-logo-outer">
-                            <a href="linkedin">
+                            <a href="https://www.linkedin.com/company/soyhabitue?originalSubdomain=uy">
                                 <img src="./assets/linkedin-icon.svg" alt="" class="social-logo">
                             </a>
                         </li>
                         <li class="social-logo-outer">
-                            <a href="youtube">
+                            <a href="https://www.youtube.com/channel/UCzn97XSUp_I5j5KhW_7Bokw">
                                 <img src="./assets/youtube-icon.svg" alt="" class="social-logo">
                             </a>
                         </li>

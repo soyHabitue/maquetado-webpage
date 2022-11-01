@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soy Habitué - Nosotros</title>
-    <link rel="stylesheet" href="../css/master.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +12,9 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/master.css">
+
 </head>
 <body>
     <div class="container-fluid _body-container subpage-body-container">
@@ -89,8 +91,8 @@
                 </div>
             </div>
             <div class="subpage-header-inner _section">
-                <h1 class="header-title subpage-title">Conocenos</h1>
-                <p class="header-subtitle subpage-subtitle">Descubrí como somos, como trabajamos y nuestra visión del futuro</p>
+                <h1 class="header-title subpage-title">Preguntas frecuentes</h1>
+                <p class="header-subtitle subpage-subtitle hide"></p>
                 <a href="" class="register-button-container hide">
                     <div class="register-button">
                         Registrate
@@ -98,51 +100,98 @@
                 </a>
             </div>
         </div>
-        <div class="nosotros-container _section sub-page-main-container section-padding">
-            <div class="nosotros-section">
-                <div class="nosotros-article user-centric row">
-                    <div class="article-text col-12 col-md-6 col-lg-5">
-                        <h4 class="article-title">Primero el cliente</h4>
-                        <p class="article-body">
-                            Nos gusta decir que, literalmente crecimos junto a nuestros restauranteros. Sabíamos, por conversaciones con ellos, que necesitaban recuperar el control de su negocio y ellos sabían la importancia de tener presencia online; así es como surge Habitué. Nos enfocamos en digitalizar restaurantes abarcando las necesidades que ellos nos plantean, resolviendo sus problemas y capacitándolos con la tecnología y las herramientas imprescindibles para poder autogestionarse y conocer a fondo lo que pasa en su local online. Además, los ayudamos y acompañamos en cada paso que dan digitalmente.
-                            </p>
-                    </div>
-                    <div class="article-image-container col-12 col-md-6 col-lg-5">
-                        <img src="../assets/primero-el-cliente-nosotros-habitue.png" alt="" class="article-image">
-                    </div>
-                </div>
-                <div class="nosotros-article vision row">
-                    <div class="article-text col-12 col-md-6 col-lg-5">
-                        <h4 class="article-title">¿Hacia dónde vamos?</h4>
-                        <p class="article-body">
-                            Buscamos que nuestros clientes alcancen su independencia digital ayudándolos en todo el proceso para que puedan autogestionarse y controlar lo que sucede en cada compra que ingresa a su sitio. Sabemos que aún quedan muchísimos gastronómicos a los que podemos ayudar, ya que existen alrededor de 3.500.000 restaurantes en todo LATAM (sin contar Brasil). <br>
-                            Hoy somos fuertes en Uruguay, ya desembarcamos en Paraguay, Argentina y proyectamos pisar fuerte el mercado de Colombiano. 
-                            <!--
-                            • +200 negocios digitalizados en Argentina, Uruguay y Paraguay<br>
-                            • +120 mil pedidos entregados<br>
-                            • 40 mil usuarios registrados<br>
-                            • USD 1.250.000 procesados en ventas a través de nuestros locales amigos-->
-                            </p>
-                    </div>
-                    <div class="article-image-container col-12 col-md-6 col-lg-5">
-                        <img src="../assets/hacia-donde-vamos-nosotros-habitue.png" alt="" class="article-image">
+        <div class="faqs-container _section sub-page-main-container section-padding">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Quiénes somos y qué servicio ofrecemos?
+
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Somos tu aliado tecnológico. Digitalizamos tu negocio simple y rápido. Te ayudamos a
+                            aumentar tus ventas y a fidelizar a tus clientes, brindándote tu propia página web y app,
+                            integradas a tu sistema de gestión y todos los medios de pago.
+                            Tus clientes van a poder pedir y pagar online, reservar mesas, acceder al menú mediante un
+                            código QR y mucho más. Con Habitué controlá todo lo que pasa en tu negocio, fijá tus zonas
+                            de entrega y gestioná tu propio delivery.
+                            Además, te asesoramos en marketing digital para que puedas crear campañas, hacer promociones
+                            y así captar, retener y fidelizar a tus clientes.
+
+                        </div>
+                        <hr>
                     </div>
                 </div>
-            </div>  
-        </div>
-        <div class="media-container _section">
-            <div class="media-section">
-                <h4 class="article-title">Habitué en los medios</h4>
-                <div class="logos-container row">
-                    <a href="https://www.bloomberglinea.com/2022/08/09/edtech-legaltech-proptech-y-wellness-entre-las-apuestas-de-500-global-en-latam/" class="media-logo-url col-9 col-md-3">
-                        <img src="../assets/bloomberg_logo.png" alt="Bloomberg" class="media-logo col-12">
-                    </a>
-                    <a href="https://www.elpais.com.uy/el-empresario/crearon-plataforma-democratiza-venta-digital-restaurantes-miran-exterior.html" class="media-logo-url col-9 col-md-3">
-                        <img src="../assets/el-pais-uruguay-logo.png" alt="Diario El Pais UY" class="media-logo col-12">
-                    </a>
-                    <a href="https://www.forbesuruguay.com/negocios/habitue-primer-startup-uruguayo-elegido-fondo-inversion-500-global-n22649" class="media-logo-url col-9 col-md-3">
-                        <img src="../assets/logo-forbes.png" alt="Forbes" class="media-logo col-12">
-                    </a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿La web es mía o de Habitué?
+
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            La web es tuya, el protagonismo es 100% de tu local. Al momento de crear tu tienda, vos
+                            elegís cómo querés que sea la URL (link) de tu sitio. Ejemplo: www.valitoburgers.com.uy
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Puedo integrarlo a mi sistema de gestión?
+
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡Por supuesto! podrás integrarlo sin ningún problema.
+                            Actualmente contamos con: Maxirest, ICG, Softrestaurant, Delysoft y Bequick.
+                            Y si tu sistema de gestión no está en esta lista, consultanos que lo hacemos posible.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingPagos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pagos" aria-expanded="false" aria-controls="pagos">
+                            ¿Qué métodos de pago puedo ofrecer?
+                        </button>
+                    </h2>
+                    <div id="pagos" class="accordion-collapse collapse" aria-labelledby="headingPagos" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡Los que quieras! tus clientes van a poder pagar sus pedidos con cualquier tarjeta (débito
+                            y/o crédito) o efectivo al momento de la entrega. Si tenés motos propias, también podés
+                            enviar tu POS a domicilio.
+                            Tendrás la opción de usar Mercado Pago con tarifa exclusiva por ser cliente Habitué. Al
+                            crear tu tienda online, vas a poder configurar los métodos de pago que quieras.
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAutogestionable">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#autogestionable" aria-expanded="false" aria-controls="autogestionable">
+                            ¿Mi tienda online es autogestionable?
+
+
+                        </button>
+                    </h2>
+                    <div id="autogestionable" class="accordion-collapse collapse" aria-labelledby="headingAutogestionable" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ¡Si, claro! Desde el panel de administración de Habitué vas a poder: cargar o eliminar
+                            productos, editar precios, armar promociones, cupones, descuentos y más. ¡Todo se ve
+                            reflejado en tiempo real!.
+                            Además, vas a tener tu propia base de datos de clientes que pidieron online alguna vez, para
+                            enviarles mensajes automáticos por whatsapp y así incentivar a que vuelvan a pedir.
+
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,7 +213,7 @@
                             <li class="footer-link-item"><a href="https://linktr.ee/soyhabitue">Soporte</a></li>
                             <!-- Evaluar cambiar blog por tutoriales hasta que este activo el blog -->
                             <li class="footer-link-item"><a href="https://www.youtube.com/channel/UCzn97XSUp_I5j5KhW_7Bokw">Tutoriales</a></li>
-                            <li class="footer-link-item"><a href="faqs.html">Preguntas frecuentes</a></li>
+                            <li class="footer-link-item"><a href="#">Preguntas frecuentes</a></li>
                         </ul>
                     </div>
 
@@ -201,8 +250,7 @@
         </div>
     </div> 
 </body>
-
-<script src="js/index.js"></script>
+<script src="../js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </html>

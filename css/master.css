@@ -13,6 +13,7 @@
 * {
     font-family: var(--poppins-font);
     color: var(--main-color);
+    scroll-behavior: smooth;
 }
 
 /* GENERALES */
@@ -99,6 +100,9 @@ nav a div, nav span{
     color: white;
     text-align: center;
 }
+.nav-button-container:focus{
+    opacity: 0.5;
+}
 .nav-button:hover{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition-timing-function: ease-in-out;
@@ -129,6 +133,7 @@ nav a div, nav span{
     animation-name: mobile-nav-open;
     animation-duration: .6s;
     animation-timing-function: ease-in-out;
+    z-index: 999;
 }
 @keyframes mobile-nav-open {
     from {left: -450px;}
@@ -207,7 +212,6 @@ nav a div, nav span{
 }
 
 .header-image-container{
-    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 3rem !important;
@@ -256,7 +260,6 @@ nav a div, nav span{
     margin-bottom: 2.5rem;
 }
 .functionality-image-container{
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -293,10 +296,16 @@ nav a div, nav span{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
+.stories-carousel-inner{
+    display: flex;
+    column-gap: 4rem;
+    width: 100%;
+}
 .customer-story-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0.2;
 }
 .customer-story{
     background-color: white;
@@ -344,7 +353,20 @@ nav a div, nav span{
     height: 48px;
     border: solid 2px white;
     border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.active-slide {
+    opacity: 1;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.active-slide .customer-story, .active-slide .customer-image{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 /* 500 */
 .accelerator-subtitule{
     margin-top: 2rem;
@@ -505,6 +527,7 @@ label{
     margin-bottom: 1rem;
     appearance: none;
     padding: 0 .5rem;
+    background-color: white;
 }
 .form-input:focus{
     border: 2px solid var(--main-color);
@@ -610,6 +633,18 @@ label{
     row-gap: 2rem;
 }
 
+/* FAQS */
+.accordion-button{
+    text-align: left;
+    font: normal normal bold 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #2932c1 !important;
+    opacity: 1;
+}
+.accordion-item{
+    background-color: #fff;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+}
 
 /* Mediaqueries */
 @media (min-width: 768px){
@@ -634,6 +669,12 @@ label{
     .functionality-details{
         margin-bottom: 0;
     }
+    /* historias de exito */
+    .stories-carousel-inner{
+        width: 70%;
+        margin-left: 15%;
+    }
+
     /* Crecemos */
     .crecemos-section{
         display: flex;
@@ -704,6 +745,11 @@ label{
     /* Clientes */
     .customer-logo{
         width: 12.5% !important;
+    }
+     /* historias de exito */
+     .stories-carousel-inner{
+        width: 50%;
+        margin-left: 25%;
     }
 
     /* NOSOTROS */

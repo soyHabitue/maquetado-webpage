@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../assets/favicon-habitue.svg">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -98,136 +100,266 @@
                 </a>
             </div>
         </div>
-        <div class="que-ofrecemos-container _section sub-page-main-container">
-            <nav id="navbar-que-ofrecemos" class="navbar-que-ofrecemos">
-                <ul class="nav nav-pills que-ofrecemos-nav-inner">
+        <div class="que-ofrecemos-container sub-page-main-container">
+            <nav id="navbar-que-ofrecemos" class="navbar-que-ofrecemos _section">
+                <ul class="nav que-ofrecemos-nav-inner">
                   <li class="nav-item">
-                    <a class="nav-link collection-link" href="#producto">Producto</a>
+                    <a class="nav-link collection-link" id="seccion-producto" onclick="scrollToSeccion('producto')">Producto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link collection-link" href="#pedidos">Pedidos</a>
+                    <a class="nav-link collection-link" id="seccion-pedidos" onclick="scrollToSeccion('pedidos')">Pedidos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link collection-link" href="#canales-de-venta">Canales de venta</a>
+                    <a class="nav-link collection-link" id="seccion-canales-de-venta" onclick="scrollToSeccion('canales-de-venta')">Canales de venta</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link collection-link" href="#marketing-soporte">Marketing y soporte</a>
+                    <a class="nav-link collection-link" id="seccion-marketing-soporte" onclick="scrollToSeccion('marketing-soporte')">Marketing y soporte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link collection-link"  id="seccion-analisis-reportes" onclick="scrollToSeccion('analisis-reportes')">Analisis y reportes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link collection-link" id="seccion-envios" onclick="scrollToSeccion('envios')">Envíos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link collection-link" id="seccion-servicios-integraciones" onclick="scrollToSeccion('servicios-integraciones')">Servicios e integraciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link collection-link" id="seccion-clientes" onclick="scrollToSeccion('clientes')">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link collection-link" id="seccion-sucursales" onclick="scrollToSeccion('sucursales')">Sucursales</a>
                   </li>
                 </ul>
               </nav>
-            <div data-bs-spy="scroll" data-bs-target="#navbar-que-ofrecemos" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="que-ofrecemos-section scrollspy-example rounded-2" tabindex="0">
-                <div id="producto" class="functionality-collection-container">
+              <div class="que-ofrecemos-section _section">
+                <div id="producto" class="functionality-collection-container seccion-funcionalidades">
                     <h2 class="functionality-collection-title">Producto</h2>
                     <div class="functionality-article-container row">
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Manejo del listado de productos</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Creá, editá y eliminá productos, también vas a poder configurar la disponibilidad / stock de los productos en cada sucursal. Todo se ve reflejado en tiempo real en tu tienda online.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Manejo del listado de categorias</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Controlá todas las categorías que están disponibles en tu tienda online y elegí el nombre de las categorías tal cual están en tu menú.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Importación y sincronización de productos</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Importá y sincronizá los productos de tu menú directamente desde tu sistema de gestión / central de pedidos.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Menu digital QR</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Descargá un código QR que redirecciona directo a tu tienda online para ofrecer a tus clientes un acceso rápido y sencillo a tu menú digital.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div id="pedidos" class="functionality-collection-container">
+                <div id="pedidos" class="functionality-collection-container seccion-funcionalidades">
                     <h2 class="functionality-collection-title">Pedidos</h2>
                     <div class="functionality-article-container row">
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Manejo de pedidos</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Controlá el estado de tus pedidos con un sencillo tablero de 3 columnas: Ingresado, En preparación, En camino.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Información completa del pedido</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Encontrá en cada pedido toda la información que necesitás: datos del cliente, forma de pago, detalles de entrega y ticket de productos.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Actualización del estado del pedido</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Tus clientes recibirán actualizaciones automáticas del estado de su pedido vía WhatsApp.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Creación manual de pedidos</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Creá pedidos de forma manual de manera simple y rápida.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div id="canales-de-venta" class="functionality-collection-container">
+                <div id="canales-de-venta" class="functionality-collection-container seccion-funcionalidades">
                     <h2 class="functionality-collection-title">Canales de venta</h2>
                     <div class="functionality-article-container row">
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Tienda online</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Vendé todos tus productos en tu propia tienda, con dominio propio.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">App Mobile</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Ofrecé tus productos desde tu propia aplicación mobile disponible para todos los dispositivos Android y IOS.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Tienda física (Próximamente)</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
-                            </p>
-                        </div>
-                        <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
-                            <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Controlá todos tus canales de venta desde un mismo lugar. Incluido tu negocio físico. 
                             </p>
                         </div>
                     </div>
                 </div>
-                <div id="marketing-soporte" class="functionality-collection-container">
+                <div id="marketing-soporte" class="functionality-collection-container seccion-funcionalidades">
                     <h2 class="functionality-collection-title">Marketing y Soporte</h2>
                     <div class="functionality-article-container row">
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Creación de descuentos y promociones</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Creá cupones con descuentos de porcentaje (%) o monto ($), además de promociones especiales y personalizadas. Elegí a quiénes aplica, qué productos aplican, cómo pueden usarlo los clientes y la fecha de validez.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Asesoramiento en marketing</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Nuestro equipo de especialistas en Marketing te asesorará con ideas, herramientas y diferentes acciones para que puedas potenciar tus ventas web y llegar a más clientes.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Asesoramiento en redes</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                El equipo de Marketing también te brindará apoyo y asesoramiento para que puedas llevar tus redes sociales al siguiente nivel y ganar más exposición para potenciar tu tienda online.
                             </p>
                         </div>
                         <div class="functionality-article col-12 col-md-6">
-                            <h4 class="functionality-article-title">Titulo funcionalidad</h4>
+                            <h4 class="functionality-article-title">Campañas optativas de marketing</h4>
                             <p class="functionality-article-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque hic doloribus deserunt, non nisi perspiciatis soluta sapiente eligendi vero.
+                                Nuestro equipo de Marketing te ofrecerá constantemente campañas enfocadas a fechas especiales que sirvan de oportunidad para potenciar tus ventas web. La adhesión a estas campañas será opcional.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Soporte 24/7 vía WhatsApp</h4>
+                            <p class="functionality-article-description">
+                                Disponemos de soporte en todo momento mediante WhatsApp para resolver de forma rápida cualquier consulta o inconveniente que tengas.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Servicio de mensajería a clientes vía WhatsApp</h4>
+                            <p class="functionality-article-description">
+                                Comunicate con tus clientes de forma rápida y masiva, enviando mensajes a través de WhatsApp a todos los clientes registrados por tu web, anunciando descuentos, promociones y comunicados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="analisis-reportes" class="functionality-collection-container seccion-funcionalidades">
+                    <h2 class="functionality-collection-title">Análisis y Reportes</h2>
+                    <div class="functionality-article-container row">
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Estadísticas de tu tienda</h4>
+                            <p class="functionality-article-description">
+                                Vas a poder visualizar estadísticas en tiempo real filtrando por fechas e indicando: clientes registrados y clientes que retornaron.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Estadísticas de pedidos</h4>
+                            <p class="functionality-article-description">
+                                Vas a poder visualizar estadísticas en tiempo real filtrando por fechas e indicando: ganancias, pedidos, ticket promedio, clientes registrados.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Productos mas vendidos</h4>
+                            <p class="functionality-article-description">
+                                Vas a poder visualizar estadísticas en tiempo real filtrando por fechas e indicando: productos más vendidos y más. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="envios" class="functionality-collection-container seccion-funcionalidades">
+                    <h2 class="functionality-collection-title">Envíos</h2>
+                    <div class="functionality-article-container row">
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Creación de zonas de envío</h4>
+                            <p class="functionality-article-description">
+                                Creá tus propias zonas de envío y determiná los costos de envío para cada una. Las zonas de envío se pueden delimitar por radio o por calles.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Método de entrega</h4>
+                            <p class="functionality-article-description">
+                                Configurá los métodos de entrega que ofreces a los clientes. Brindales la posibilidad de recibir el pedido en su domicilio o retirarlo en el local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="servicios-integraciones" class="functionality-collection-container seccion-funcionalidades">
+                    <h2 class="functionality-collection-title">Servicios e integraciones</h2>
+                    <div class="functionality-article-container row">
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Integración con medios de pago</h4>
+                            <p class="functionality-article-description">
+                                Ofrecé a tus clientes la posibilidad de pagar sus pedidos con cualquier forma de pago que deseen: Efectivo, Transferencia, Solicitar POS, Pago online.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Integración con todos los sistemas de gestión</h4>
+                            <p class="functionality-article-description">
+                                Recibí y administrá tus pedidos directamente en tu sistema de gestión / central de pedidos. 
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Integración con impresoras térmicas</h4>
+                            <p class="functionality-article-description">
+                                Imprimí tus pedidos directo desde nuestra plataforma hacia tu comanda.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Integración con Google Analytics y Google Tag Manager</h4>
+                            <p class="functionality-article-description">
+                                Realizá un análisis exhaustivo de tu negocio gracias a las métricas y estadísticas de Google. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="clientes" class="functionality-collection-container seccion-funcionalidades">
+                    <h2 class="functionality-collection-title">Clientes</h2>
+                    <div class="functionality-article-container row">
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Base de datos de clientes propia</h4>
+                            <p class="functionality-article-description">
+                                Tu negocio, tus clientes. Los clientes que se registren en tu sitio web, se guardarán en tu propia base de datos. Además, vas a poder crear, editar o importar clientes.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Integración con todos los sistemas de gestión</h4>
+                            <p class="functionality-article-description">
+                                Recibí y administrá tus pedidos directamente en tu sistema de gestión / central de pedidos. 
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Categorización de clientes</h4>
+                            <p class="functionality-article-description">
+                                Categorizá a tus clientes en base a sus comportamientos (por consumición, inactividad, cantidad de pedidos, fecha de nacimiento, etc.) y realizá acciones especificas para ese grupo de clientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sucursales" class="functionality-collection-container seccion-funcionalidades">
+                    <h2 class="functionality-collection-title">Sucursales</h2>
+                    <div class="functionality-article-container row">
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Creación de sucursales</h4>
+                            <p class="functionality-article-description">
+                                Creá las diferentes sucursales de tu negocio y administralas desde un mismo lugar.
+                            </p>
+                        </div>
+                        <div class="functionality-article col-12 col-md-6">
+                            <h4 class="functionality-article-title">Sucursales independientes</h4>
+                            <p class="functionality-article-description">
+                                Tus sucursales son independientes. Elegí que productos estarán disponibles en cada una, creá sus propias zonas de delivery, fijá diferentes horarios para cada sucursal y mucho más.
                             </p>
                         </div>
                     </div>
@@ -249,10 +381,11 @@
                     <div class="footer-links-collection">
                         <h5 class="footer-collection-title">Atención</h5>
                         <ul class="footer-links-list">
-                            <li class="footer-link-item"><a href="https://linktr.ee/soyhabitue">Soporte</a></li>
-                            <!-- Evaluar cambiar blog por tutoriales hasta que este activo el blog -->
-                            <li class="footer-link-item"><a href="https://www.youtube.com/channel/UCzn97XSUp_I5j5KhW_7Bokw">Tutoriales</a></li>
                             <li class="footer-link-item"><a href="faqs.html">Preguntas frecuentes</a></li>
+                             <!-- Evaluar cambiar blog por tutoriales hasta que este activo el blog -->
+                             <li class="footer-link-item"><a href="https://www.youtube.com/channel/UCzn97XSUp_I5j5KhW_7Bokw">Tutoriales</a></li>
+                            <li class="footer-link-item"><a href="https://api.whatsapp.com/send/?phone=59893510597&text&type=phone_number&app_absent=0">Soporte</a></li>
+                            <li class="footer-link-item"><a href="https://linktr.ee/soyhabitue">Atención</a></li>
                         </ul>
                     </div>
 
@@ -290,7 +423,10 @@
     </div> 
 </body>
 
-<script src="../js/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<script src="../js/funcionalidades.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>-->
 
 </html>

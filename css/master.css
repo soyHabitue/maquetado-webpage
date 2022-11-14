@@ -286,7 +286,9 @@ nav a div, nav span{
     font-family: var(--paytone-font);
 }
 /* Clientes */
-
+.clientes-container{
+    background-color: var(--secondary-color);
+}
 .customer-logo-image{
     width: 100%;
     border-radius: 50%;
@@ -312,6 +314,10 @@ nav a div, nav span{
     padding: 1rem;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 350px;
 }
 .story{
     line-height: 1.5;
@@ -339,7 +345,7 @@ nav a div, nav span{
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: solid 6px white;
+    /*border: solid 6px white;*/
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .carousel-buttons-container{
@@ -451,18 +457,19 @@ nav a div, nav span{
 .navbar-que-ofrecemos{
     background-color: white;
     width: 100%;
-    overflow-x: scroll;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 .que-ofrecemos-nav-inner{
     flex-wrap: nowrap !important;
+    overflow-x: scroll;
+    padding: 1rem 0;
 }
 .collection-link{
     padding-top: .75rem !important;
     padding-bottom: .75rem !important;
     width: max-content;
     color: #1d1d1d !important;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 .que-ofrecemos-section{
     margin-top: 2rem;
@@ -486,9 +493,15 @@ nav a div, nav span{
     position: fixed;
     top: 0;
     width: 100%;
+    left: 0;
+
   }
   .sticky + .que-ofrecemos-section {
-    padding-top: 60px;
+    padding-top: 100px;
+  }
+  .active{
+    background: var(--blue-gradient-habitue);
+    color: white !important;
   }
 /* REGISTER */
 
@@ -743,6 +756,9 @@ label{
     }
 
     /* Clientes */
+    .customers-container{
+        justify-content: space-around;
+    }
     .customer-logo{
         width: 12.5% !important;
     }

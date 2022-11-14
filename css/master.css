@@ -2,6 +2,7 @@
     --blue-gradient-habitue: linear-gradient(to left bottom, #696FD4, #2932C1);
     --red-gradient-habitue: linear-gradient(to left bottom, #CF4D7F, #C3205F);
     --main-color: #2932C1;
+    --third-color: #c3205f;
     --secondary-color: #DCF2DD;
     --highlight-color: #52BE48; 
     --paytone-font: 'Paytone One', sans-serif;
@@ -45,6 +46,33 @@ a {
     color: #1d1d1d;
 }
 
+/* SOPORTE */
+    .support-button{
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+    }
+    .support-button-inner{
+        background: white;
+        display: flex;
+        align-items: center;
+        column-gap: .75rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        padding: .75rem 1rem;
+        border-radius: 1rem;
+    }
+    .support-button-inner:hover{
+        background: var(--third-color);
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .support-button-inner:hover h6{
+        color: white;
+    }
+    
+    .support-button-inner h6{
+        margin: 0;
+    }
 
 /* NAVBAR */
 .desktop-nav{
@@ -348,12 +376,12 @@ nav a div, nav span{
     /*border: solid 6px white;*/
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-.carousel-buttons-container{
+/*.carousel-buttons-container{
     display: flex;
     justify-content: flex-end;
     column-gap: 2rem;
     margin-top: 2rem;
-}
+}*/
 .carousel-button{
     width: 48px;
     height: 48px;
@@ -363,7 +391,29 @@ nav a div, nav span{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
+.carousel-button:hover{
+    background-color: white;
+    transition-duration: 0.2s;
+}
+#prev-btn{
+    margin-top: -25%;
+    left: 2rem;
+    background-image: url(../assets/prev-arrow-icon.svg);
+}
+#next-btn{
+    margin-top: -25%;
+    right: 2rem;
+    background-image: url(../assets/next-arrow-icon.svg);
+}
+#prev-btn:hover{
+    background-image: url(../assets/prev-arrow-icon-violet.svg);
+}
+#next-btn:hover{
+    background-image: url(../assets/next-arrow-icon-violet.svg);
+}
+
 .active-slide {
     opacity: 1;
     transition-duration: 0.2s;

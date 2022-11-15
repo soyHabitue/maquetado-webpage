@@ -7,6 +7,16 @@ function openNav() {
 function closeNav() {
     mobileMenu.classList.replace("show", "hide");
 }
+//support button
+window.addEventListener('load', function () {
+  var support = document.getElementById("support-text");
+  var supportCont = document.getElementById("support-box");
+  setTimeout(function(){
+    support.style.display = "none";
+ }, 2000);
+})
+
+
 
 /* INICIO SLIDER HISTORIAS DE EXITO */
 const slideContainer = document.querySelector('.stories-carousel-container');
@@ -65,17 +75,6 @@ slide.addEventListener('transitionend', () => {
     activeElem.classList.add("active-slide");
   });
  
-
-  //activeElem.classList.add("active-slide");
-  
-  //lastElem.classList.remove("active-slide");
-  //nextElem.classList.remove("active-slide");
-
-  /*if (activeElem) {
-    activeElem.classList.add("active-slide");
-  } else {
-    activeElem.classList.remove("active-slide");
-    }*/
 });
 slides[index - 1].classList.add("active-slide");
 

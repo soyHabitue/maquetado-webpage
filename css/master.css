@@ -269,6 +269,23 @@ nav a div, nav span{
 .section-image{
     width: 170%;
 }
+
+/* Integraciones home */
+.integraciones-container{
+    background: var(--blue-gradient-habitue);
+}
+.integraciones-section{
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2rem;
+}
+.integraciones-image{
+    width: 100%;
+}
+.integraciones-container .section-name, .integraciones-title, .integraciones-description p{
+    color: white;
+}
+
 /* Funcionalidades */
 .funcionalidades-container{
     background: var(--red-gradient-habitue);
@@ -318,12 +335,11 @@ nav a div, nav span{
     font-family: var(--paytone-font);
 }
 /* Clientes */
-.clientes-container{
-    background-color: var(--secondary-color);
-}
+
 .customer-logo-image{
     width: 100%;
     border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0 0 0 / 10%);
 }
 .stories-carousel-container{
     background: var(--blue-gradient-habitue);
